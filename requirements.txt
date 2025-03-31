@@ -26,4 +26,7 @@ ccxt                    # Acceso a exchanges cripto
 # 📦 Otros
 alpaca-trade-api
 python-dotenv
+config
+os
+
 

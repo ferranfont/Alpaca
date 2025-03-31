@@ -1,8 +1,7 @@
 from alpaca_trade_api.rest import REST, TimeFrame
 from dotenv import load_dotenv
 import pandas as pd
-import config
-import os
+
 import chart
 
 load_dotenv()

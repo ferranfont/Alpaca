@@ -1,8 +1,10 @@
 from alpaca_trade_api.rest import REST, TimeFrame
 from dotenv import load_dotenv
 import pandas as pd
-
 import chart
+import config
+import os
+
 
 load_dotenv()
 
@@ -18,22 +20,19 @@ api = REST(API_KEY, API_SECRET, BASE_URL, api_version='v2')
 
 from alpaca_trade_api.rest import TimeFrame
 
-
 #data = api.get_bars("AAPL", TimeFrame.Day, limit=30, feed="iex").df
 # data = api.get_crypto_bars(config.TICKER, TimeFrame.Minute, limit=150).df  #solo crytpos
 
-start_date = pd.Timestamp("2022-02-01", tz="America/New_York").isoformat()
-end_date = pd.Timestamp("2025-03-29", tz="America/New_York").isoformat()
+start_date = config.START_DATE
+end_date = config.END_DATE
 
 data = api.get_bars("TSLA", TimeFrame.Day, start=start_date, end=end_date).df
 
 #data = api.get_bars(config.TICKER, TimeFrame.Minute, limit=550).df
 
-
 print("✅ Datos recibidos:")
-print(len(data))
+print("Número de registros:", len(data))
 print(data)
-
 
 
 # Asumiendo que ya tienes el DataFrame `data`

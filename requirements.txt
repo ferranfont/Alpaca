@@ -4,6 +4,7 @@
 pandas                  # Manejo de series temporales
 numpy                   # Operaciones matemáticas
 yfinance                # Datos históricos desde Yahoo Finance
+os
 
 # 📉 Visualización
 matplotlib              # Gráficos básicos
@@ -26,7 +27,6 @@ ccxt                    # Acceso a exchanges cripto
 # 📦 Otros
 alpaca-trade-api
 python-dotenv
-config
-os
+
 
 

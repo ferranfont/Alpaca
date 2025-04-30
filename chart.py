@@ -12,7 +12,6 @@ def graficar_precio(df, titulo="Gráfico de precios", columna="close"):
 
     plt.figure(figsize=(12, 6))
     plt.plot(df.index, df[columna], label=titulo, linewidth=2)
-
     plt.title(titulo)
     plt.xlabel("Fecha")
     plt.ylabel("Precio")

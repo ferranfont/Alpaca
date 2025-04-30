@@ -1,10 +1,13 @@
 # DEPENDENCIAS
+# os y sys son parte de la librería estándar de Python, no es necesario instalarlas
+
 
 # 📊 Datos y análisis
 pandas                  # Manejo de series temporales
 numpy                   # Operaciones matemáticas
 yfinance                # Datos históricos desde Yahoo Finance
-os
+requests                # Peticiones HTTP
+
 
 # 📉 Visualización
 matplotlib              # Gráficos básicos

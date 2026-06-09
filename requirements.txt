@@ -12,6 +12,7 @@ requests                # Peticiones HTTP
 # 📉 Visualización
 matplotlib              # Gráficos básicos
 plotly                  # Gráficos interactivos
+dash                    # Dashboards web en vivo (gráfico en tiempo real)
 
 # 💹 Trading APIs
 alpaca-trade-api        # API de trading con Alpaca
@@ -23,6 +24,7 @@ quantstats              # Métricas de portafolio y performance
 
 # 📈 Technical Analysis & Backtesting
 TA-Lib                  # Indicadores técnicos como RSI, MACD, BB
+esta libreria: TA se  instala de forma manual)
 zipline-reloaded        # Zipline (versión mantenida)
 backtrader              # Motor de backtesting muy usado
 ccxt                    # Acceso a exchanges cripto
